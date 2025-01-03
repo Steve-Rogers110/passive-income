@@ -19,7 +19,11 @@
                 <div class="logo">$</div>
                 <div class="middle">Learn to Earn</div>
                 <div class="right">
-                    <a href="#">
+                    <a
+                        onclick="return false;"
+                        href="https://pay.hotmart.com/C97291922A?checkoutMode=2"
+                        class="hotmart-fb"
+                    >
                         <button class="button-64" role="button">
                             <span class="text">Buy Now</span>
                         </button>
@@ -35,8 +39,8 @@
                 individuals approach financial independence and wealth creation.
             </p>
             <p>
-                Earn Up to <span class="atention-span">$10,000</span> a month
-                while doing almost nothing
+                Earn Up to <span class="atention-span">$10,000</span> a month by
+                doing nothing
             </p>
             <div class="video-container">
                 <div class="video-div">
@@ -100,7 +104,11 @@
                 <div class="price">
                     <!-- <span class="new">From</span> -->
                     <span class="old">$300.00</span>
-                    <a href="https://google.com">
+                    <a
+                        onclick="return false;"
+                        href="https://pay.hotmart.com/C97291922A?checkoutMode=2"
+                        class="hotmart-fb"
+                    >
                         <button class="button-64" role="button">
                             <span class="text">$29.99</span>
                         </button>
@@ -128,6 +136,20 @@
                 </p>
             </div>
         </main>
+        <script type="text/javascript">
+            function importHotmart() {
+                var imported = document.createElement("script");
+                imported.src =
+                    "https://static.hotmart.com/checkout/widget.min.js";
+                document.head.appendChild(imported);
+                var link = document.createElement("link");
+                link.rel = "stylesheet";
+                link.type = "text/css";
+                link.href = "https://static.hotmart.com/css/hotmart-fb.min.css";
+                document.head.appendChild(link);
+            }
+            importHotmart();
+        </script>
         <script src="js.js"></script>
     </body>
 </html>
