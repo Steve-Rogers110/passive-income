@@ -10,12 +10,19 @@ playButton.onclick = () => {
     paused ? video.play() : video.pause();
 
     paused = !paused;
-
-    // if(paused){
-    //     pauseOverlay.style.opacity = "80%"
-    // }else{
-    //     pauseOverlay.style.opacity = "0%"
-    // }
-    // pauseOverlay.onmouseover = () =>{pauseOverlay.style.opacity= "80%"}
-    // pauseOverlay.onmouseout = () =>{pauseOverlay.style.opacity= "0%"}
 };
+
+window.addEventListener("mouseout", function (event) {
+    if (!event.relatedTarget || event.relatedTarget.nodeName === "HTML") {
+        const overlay = document.getElementById("overlay");
+        overlay.style.display = "flex"; // Show the overlay
+        overlay.style.visibility = "visible";
+    }
+});
+
+const overlay = document.getElementById("overlay");
+// Close the overlay when the button is clicked
+document.getElementById("closeOverlay").addEventListener("click", function () {
+    overlay.style.display = "none"; // Hide the overlay
+    overlay.style.visibility = "collapse";
+});
