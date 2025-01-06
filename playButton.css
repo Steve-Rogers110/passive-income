@@ -4,7 +4,7 @@
     justify-content: center;
   }
   .fondo {
-    background: #f4471f;
+    background: #4a1ff4;
     border-radius: 50%;
     box-shadow: 0 1px 2.2px rgba(0, 0, 0, 0.051),
       0 2.3px 5.3px rgba(0, 0, 0, 0.059), 0 4.4px 10px rgba(0, 0, 0, 0.06),
@@ -16,7 +16,7 @@
     width: 100px;
   }
   .botón:active .fondo {
-    background: #e93c15;
+    background: #4e15e9;
   }
   .icono {
     height: 200px;
