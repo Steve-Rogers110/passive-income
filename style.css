@@ -35,6 +35,15 @@ a{
     font-size: large;
     color: red;
 }
+.newtab-button{
+    display: flex;
+    justify-content: center;
+}
+.newtab-svg{
+    height: 1.5rem;
+    color: white;
+    padding-left: 0.5rem;
+}
 .logo{
     width: 5rem;
     font-size: 3rem;
