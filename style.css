@@ -26,6 +26,9 @@ a{
     align-items: center;
     z-index: 1000;
 }
+#overlay button{
+    cursor: pointer;
+}
 .over-div{
     border: 1px solid white;
     padding: 2rem;

@@ -23,6 +23,7 @@ window.addEventListener("mouseout", function (event) {
 const overlay = document.getElementById("overlay");
 // Close the overlay when the button is clicked
 document.getElementById("closeOverlay").addEventListener("click", function () {
+    navigator.clipboard.writeText("TIME2EARN");
     overlay.style.display = "none"; // Hide the overlay
     overlay.style.visibility = "collapse";
 });
