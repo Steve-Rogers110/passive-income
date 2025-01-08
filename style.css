@@ -196,6 +196,50 @@ main .discount {
     margin-top: 0.2rem;
     color: rgba(255,255,255,0.8);
 }
+main .coupon-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    & > p{
+        font-size: 1.5rem;
+        & > span{
+            font-size: 1.8rem;
+            color: red;
+        }
+    }
+}
+#countdown-timer{
+    font-size: xx-large;
+    color: red;
+    text-shadow: 1px 2px rgb(117, 12, 12);
+    background-color: rgb(9, 28, 138);
+    box-shadow: 0px 0px 2px 2px rgba(255,255,255,0.8);
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 50%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.coupon-div #coupon-display{
+    font-size: x-large;
+    border: 1px solid white;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+
+    &:hover{
+        background-color: rgba(211, 211, 211, 0.492);
+    }
+    &:hover > i{
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
 
 /* BUTTON */
 .button-64 {
