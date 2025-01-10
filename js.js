@@ -1,6 +1,8 @@
 const playButton = document.getElementById("playButton");
 const pauseOverlay = document.getElementById("pause-overlay");
 const video = document.getElementById("video");
+const overlay = document.getElementById("overlay");
+
 
 const couponCode = "TIME2EARN";
 
@@ -17,15 +19,16 @@ playButton.onclick = () => {
 
     paused = !paused;
 };
+
 // Pause video Olverlay
 window.addEventListener("mouseout", function (event) {
     if (!event.relatedTarget || event.relatedTarget.nodeName === "HTML") {
-        const overlay = document.getElementById("overlay");
-        copyCoupon();
         overlay.style.display = "flex"; // Show the overlay
         overlay.style.visibility = "visible";
     }
 });
+
+// Fullscreen Button
 let isFullscreen = false;
 const videoContainer = document.getElementById("video-div");
 document.getElementById("fullscreen").addEventListener("click", () => {
@@ -41,12 +44,17 @@ document.getElementById("fullscreen").addEventListener("click", () => {
 });
 
 // Mouse out of page popup
-const overlay = document.getElementById("overlay");
-// Close the overlay when the button is clicked
-document.getElementById("closeOverlay").addEventListener("click", function () {
+// Copy Coupon & Close the overlay when the button is clicked
+document.getElementById("copyCloseOverlay").addEventListener("click", function () {
+    copyCoupon();
     overlay.style.display = "none"; // Hide the overlay
     overlay.style.visibility = "collapse";
 });
+
+document.getElementById("closeOverlay").addEventListener("click",() =>{
+    overlay.style.display = "none"; // Hide the overlay
+    overlay.style.visibility = "collapse";
+})
 
 const primarySource = document.getElementById("firstVideoSource");
 
