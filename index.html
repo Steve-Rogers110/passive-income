@@ -1,231 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Learn to Earn - Master Passive Income</title>
-        <meta
-            name="description"
-            content="Discover the secrets to building passive income streams and achieving financial freedom. Learn to Earn offers a comprehensive course for wealth creation."
-        />
-        <meta
-            name="keywords"
-            content="passive income, financial freedom, wealth creation, online course, Learn to Earn"
-        />
-        <meta name="author" content="Steve Rogers" />
-        <link rel="icon" type="image/png" href="/favicon.png" />
-        <link rel="shortcut icon" type="image/png" href="favicon.png?">
-    </head>
-    <body>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="playButton.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-        />
-        <section class="header-section">
-            <div class="header-main">
-                <div class="logo">$</div>
-                <div class="middle">Learn to Earn</div>
-                <div class="right">
-                    <a
-                        onclick="return false;"
-                        href="https://pay.hotmart.com/M97376979C?checkoutMode=2"
-                        class="hotmart-fb"
-                    >
-                        <button class="button-64" role="button">
-                            <span class="text">Buy Now</span>
-                        </button>
-                    </a>
-                    <!-- <button class="buy-button">Buy Now</button> -->
-                </div>
-            </div>
-        </section>
-        <div id="overlay">
-            <div class="over-div">
-                <h2>Wait! Before you go...</h2>
-                <p>
-                    Use the coupon
-                    <span class="atention-span">TIME2EARN</span> to get a 35%
-                    Discount on your purchase!
-                </p>
-                <div class="button-row">
-                    <button
-                        id="copyCloseOverlay"
-                        style="padding: 10px 20px; font-size: 16px"
-                    >
-                        Copy & Close
-                    </button>
-                    <button
-                        id="closeOverlay"
-                        style="padding: 10px 20px; font-size: 16px"
-                    >
-                        Close
-                    </button>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn to Earn - Master Passive Income</title>
+    <meta
+      name="description"
+      content="Discover the secrets to building passive income streams and achieving financial freedom. Learn to Earn offers a comprehensive course for wealth creation."
+    />
+    <meta
+      name="keywords"
+      content="passive income, financial freedom, wealth creation, online course, Learn to Earn"
+    />
+    <meta name="author" content="Steve Rogers" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png?" />
+  </head>
+  <body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="playButton.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <section class="header-section">
+      <div class="header-main">
+        <div class="logo">$</div>
+        <div class="middle">Learn to Earn</div>
+        <div class="right">
+          <a
+            onclick="return false;"
+            href="https://pay.hotmart.com/M97376979C?checkoutMode=2"
+            class="hotmart-fb"
+          >
+            <button class="button-64" role="button">
+              <span class="text">Buy Now</span>
+            </button>
+          </a>
+          <!-- <button class="buy-button">Buy Now</button> -->
         </div>
-        <main>
-            <h1 class="title">Introduction to Passive Income</h1>
-            <p class="paragraph">
-                Passive income is a concept that has revolutionized how
-                individuals approach financial independence and wealth creation.
-            </p>
-            <p>
-                Earn Up to <span class="atention-span">$10,000</span> a month
-                from the comfort of your home
-            </p>
-            <div class="video-container" id="video-container">
-                <div class="video-div" id="video-div">
-                    <video type="video/mp4" id="video">
-                        <source
-                            id="firstVideoSource"
-                            src="https://www.dropbox.com/scl/fi/2b0viwgwkbjzflus7802b/Passive-Income-Promotional-VEED.mp4?rlkey=zrx46cai6jjpp0a1v3n67vbcb&st=tzrso6lu&dl=0&raw=1"
-                        />
-                        <source
-                            src="./Passive Income Promotional-VEED.mp4"
-                            id="secondVideoSource"
-                        />
-                    </video>
-                    <div class="pause-overlay paused" id="pause-overlay">
-                        <div class="play-button">
-                            <div class="botón" id="playButton">
-                                <div
-                                    class="fondo"
-                                    x="0"
-                                    y="0"
-                                    width="200"
-                                    height="200"
-                                ></div>
-                                <div class="icono" width="200" height="200">
-                                    <div
-                                        class="parte izquierda"
-                                        x="0"
-                                        y="0"
-                                        width="200"
-                                        height="200"
-                                        fill="#fff"
-                                    ></div>
-                                    <div
-                                        class="parte derecha"
-                                        x="0"
-                                        y="0"
-                                        width="200"
-                                        height="200"
-                                        fill="#fff"
-                                    ></div>
-                                </div>
-                                <div class="puntero"></div>
-                            </div>
-                            <i class="fa-solid fa-expand" id="fullscreen"></i>
-                        </div>
-                    </div>
+      </div>
+    </section>
+    <div id="overlay">
+      <div class="over-div">
+        <h2>Wait! Before you go...</h2>
+        <p>
+          Use the coupon
+          <span class="atention-span">TIME2EARN</span> to get a 35% Discount on
+          your purchase!
+        </p>
+        <div class="button-row">
+          <button
+            id="copyCloseOverlay"
+            style="padding: 10px 20px; font-size: 16px"
+          >
+            Copy & Close
+          </button>
+          <button id="closeOverlay" style="padding: 10px 20px; font-size: 16px">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+    <main>
+      <h1 class="title">Introduction to Passive Income</h1>
+      <p class="paragraph">
+        Passive income is a concept that has revolutionized how individuals
+        approach financial independence and wealth creation.
+      </p>
+      <p>
+        Are you ready to break free from the 9-to-5 grind and achieve financial
+        freedom? Imagine earning a steady income while working from the comfort
+        of your home—or even while you sleep! With our Passive Income Course,
+        you’ll discover proven strategies to create sustainable revenue streams
+        that work for you.
+      </p>
+      <div class="video-container" id="video-container">
+        <div class="video-div" id="video-div">
+          <video type="video/mp4" id="video">
+            <source
+              id="firstVideoSource"
+              src="https://www.dropbox.com/scl/fi/2b0viwgwkbjzflus7802b/Passive-Income-Promotional-VEED.mp4?rlkey=zrx46cai6jjpp0a1v3n67vbcb&st=tzrso6lu&dl=0&raw=1"
+            />
+            <source
+              src="./Passive Income Promotional-VEED.mp4"
+              id="secondVideoSource"
+            />
+          </video>
+          <div class="pause-overlay paused" id="pause-overlay">
+            <div class="play-button">
+              <div class="botón" id="playButton">
+                <div class="fondo" x="0" y="0" width="200" height="200"></div>
+                <div class="icono" width="200" height="200">
+                  <div
+                    class="parte izquierda"
+                    x="0"
+                    y="0"
+                    width="200"
+                    height="200"
+                    fill="#fff"
+                  ></div>
+                  <div
+                    class="parte derecha"
+                    x="0"
+                    y="0"
+                    width="200"
+                    height="200"
+                    fill="#fff"
+                  ></div>
                 </div>
+                <div class="puntero"></div>
+              </div>
+              <i class="fa-solid fa-expand" id="fullscreen"></i>
             </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        This is not a “get-rich-quick” scheme. Building passive income takes
+        effort, planning, and the right knowledge. Our course is designed to
+        guide you every step of the way, providing actionable insights and
+        practical tools to help you build income sources that require minimal
+        ongoing effort once established.
+      </p>
+      <p>
+        Unlike active income, which requires continuous effort and time—like a
+        traditional 9-to-5 job—passive income enables you to earn money with
+        minimal ongoing involvement once the initial setup is complete. It
+        represents a shift from trading hours for dollars to building systems or
+        assets that generate income while you focus on other pursuits or even
+        enjoy your free time.
+      </p>
+      <div class="purchase">
+        <p>
+          You can learn how to achieve this,<span class="atention-span">
+            and more</span
+          >, by aquiring the Learn to Earn's
+          <span class="atention-span">Passive Income Course</span>
+        </p>
+        <div class="price">
+          <span class="old">$300.00</span>
+          <a
+            onclick="return false;"
+            href="https://pay.hotmart.com/M97376979C?checkoutMode=2"
+            class="hotmart-fb"
+          >
+            <button class="button-64" role="button">
+              <span class="text">$29.99</span>
+            </button>
+          </a>
+          <div class="discount">90% off</div>
+        </div>
+      </div>
+      <h1>Here’s what you’ll learn:</h1>
+      <div class="list-div">
+      <ul>
+        <li>The fundamentals of passive income and why it’s a game-changer.</li>
+        <li>
+          Proven methods for earning online, from digital products to affiliate
+          marketing.
+        </li>
+        <li>How to invest wisely in assets that generate recurring revenue.</li>
+        <li>Strategies for scaling your passive income streams over time.</li>
+      </ul>
 
-            <p>
-                Unlike active income, which requires continuous effort and
-                time—like a traditional 9-to-5 job—passive income enables you to
-                earn money with minimal ongoing involvement once the initial
-                setup is complete. It represents a shift from trading hours for
-                dollars to building systems or assets that generate income while
-                you focus on other pursuits or even enjoy your free time.
-            </p>
-            <div class="purchase">
-                <p>
-                    You can learn how to achieve this,<span
-                        class="atention-span"
-                    >
-                        and more</span
-                    >, by aquiring the Learn to Earn's
-                    <span class="atention-span">Passive Income Course</span>
-                </p>
-                <div class="price">
-                    <span class="old">$300.00</span>
-                    <a
-                        onclick="return false;"
-                        href="https://pay.hotmart.com/M97376979C?checkoutMode=2"
-                        class="hotmart-fb"
-                    >
-                        <button class="button-64" role="button">
-                            <span class="text">$29.99</span>
-                        </button>
-                    </a>
-                    <div class="discount">90% off</div>
-                </div>
-            </div>
-            <div class="about">
-                <h1>
-                    This course was created to help you unlock the secrets of
-                    building consistent, hands-off income streams that can
-                    transform your financial future.
-                </h1>
-                <p>
-                    Whether you're new to the idea of passive income or looking
-                    to refine your strategies, this course will teach you proven
-                    methods to generate large amounts of money while freeing up
-                    your time.
-                </p>
-                <p>
-                    Imagine earning money even as you sleep, travel, or spend
-                    time with loved ones—this is not just a dream but a reality
-                    waiting for you to claim. Enroll now and take the first step
-                    toward financial freedom and a life of abundance!
-                </p>
-            </div>
-            <div class="coupon-div">
-                <p>
-                    To get you kickstated on your journey, we are providing
-                    <span>35%</span>
-                    discount codes for a limited time!
-                </p>
-                <!-- HERE -->
-                <div id="countdown-timer"></div>
-                <div id="coupon-display">
-                    TIME2EARN <i class="fa-solid fa-copy"></i>
-                </div>
-            </div>
-        </main>
-        <script type="text/javascript">
-            function importHotmart() {
-                var imported = document.createElement("script");
-                imported.src =
-                    "https://static.hotmart.com/checkout/widget.min.js";
-                document.head.appendChild(imported);
-                var link = document.createElement("link");
-                link.rel = "stylesheet";
-                link.type = "text/css";
-                link.href = "https://static.hotmart.com/css/hotmart-fb.min.css";
-                document.head.appendChild(link);
-            }
-            importHotmart();
-        </script>
-        <script src="js.js"></script>
-        <div class="newtab-button">
-            <a href="https://pay.hotmart.com/M97376979C?checkoutMode=2">
-                <button class="button-64" role="button">
-                    <span class="text"
-                        >Open on a new Window
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i
-                    ></span>
-                </button>
-            </a>
+      <p>
+        Whether you’re looking to supplement your current income or transition
+        to working entirely from home, this course is your gateway to financial
+        independence. It’s time to take control of your future. Enroll today and
+        start building a life where your income doesn’t depend solely on the
+        hours you work.
+      </p>
+      <div class="about">
+        <h1>
+          This course was created to help you unlock the secrets of building
+          consistent, hands-off income streams that can transform your financial
+          future.
+        </h1>
+        <p>
+          Whether you're new to the idea of passive income or looking to refine
+          your strategies, this course will teach you proven methods to generate
+          large amounts of money while freeing up your time.
+        </p>
+        <p>
+          Imagine earning money even as you sleep, travel, or spend time with
+          loved ones—this is not just a dream but a reality waiting for you to
+          claim. Enroll now and take the first step toward financial freedom and
+          a life of abundance!
+        </p>
+      </div>
+      <div class="coupon-div">
+        <p>
+          To get you kickstated on your journey, we are providing
+          <span>35%</span>
+          discount codes for a limited time!
+        </p>
+        <!-- HERE -->
+        <div id="countdown-timer"></div>
+        <div id="coupon-display">
+          TIME2EARN <i class="fa-solid fa-copy"></i>
         </div>
-        <footer>
-            <div class="certificates">
-                <img src="./certificates/th-3034740672.png" alt="" />
-                <img src="./certificates/image.png" alt="" />
-                <img src="./certificates/image copy.png" alt="" />
-            </div>
-            <div class="Copyright">
-                <p>Copyright &copy; Steve Rogers</p>
-            </div>
-        </footer>
-    </body>
+      </div>
+    </main>
+    <script type="text/javascript">
+      function importHotmart() {
+        var imported = document.createElement("script");
+        imported.src = "https://static.hotmart.com/checkout/widget.min.js";
+        document.head.appendChild(imported);
+        var link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.type = "text/css";
+        link.href = "https://static.hotmart.com/css/hotmart-fb.min.css";
+        document.head.appendChild(link);
+      }
+      importHotmart();
+    </script>
+    <script src="js.js"></script>
+    <div class="newtab-button">
+      <a href="https://pay.hotmart.com/M97376979C?checkoutMode=2">
+        <button class="button-64" role="button">
+          <span class="text"
+            >Open on a new Window
+            <i class="fa-solid fa-arrow-up-right-from-square"></i
+          ></span>
+        </button>
+      </a>
+    </div>
+    <footer>
+      <div class="certificates">
+        <img src="./certificates/th-3034740672.png" alt="" />
+        <img src="./certificates/image.png" alt="" />
+        <img src="./certificates/image copy.png" alt="" />
+      </div>
+      <div class="Copyright">
+        <p>Copyright &copy; Steve Rogers</p>
+      </div>
+    </footer>
+  </body>
 </html>
